@@ -44,7 +44,7 @@ resource "random_pet" "pet" {
         condition = local.prefix != ""
         error_message = "prefix can't be an empty string!"
     }
-   } 
+   }
 }
 output "names" {
     value = [for pet in random_pet.pet : pet.id]
