@@ -19,7 +19,7 @@ variable "length" {
     default = 1
 
     validation{
-        condition = var.length > 1
+        condition = var.length > 0
         error_message = "length must be positive."
     }
 }
